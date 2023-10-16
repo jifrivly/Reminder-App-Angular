@@ -1,0 +1,31 @@
+<p>reminder-dashboard works!</p>
+
+<div class="reminders-container">
+  <div class="reminder" *ngFor="let reminder of reminders()">
+    <!-- <button (click)="toggleEditMode(reminder)">Edit</button> -->
+
+    <div class="reminder-details">
+      {{ reminder.name }}
+    </div>
+    <div class="reminder-details">
+      {{ reminder.description }}
+    </div>
+    <div class="reminder-details">
+      {{ reminder.time }}
+    </div>
+    <div class="days-list">
+      <span *ngFor="let day of days">
+        {{ day }} -
+        <span
+          [ngClass]="{
+            'true-day': reminder.schedules[day],
+            'false-day': !reminder.schedules[day]
+          }"
+        >
+          <mat-icon *ngIf="reminder.schedules[day]">check</mat-icon>
+          <mat-icon *ngIf="!reminder.schedules[day]">close</mat-icon>
+        </span>
+      </span>
+    </div>
+  </div>
+</div>
