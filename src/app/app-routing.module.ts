@@ -4,6 +4,11 @@ import { NotFoundComponent } from './Components/not-found/not-found.component';
 
 const routes: Routes = [
   {
+    path: 'reminders',
+    loadChildren: () =>
+      import('./reminder/reminder.module').then((m) => m.ReminderModule),
+  },
+  {
     path: 'not-found',
     component: NotFoundComponent,
   },
