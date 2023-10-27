@@ -3,39 +3,39 @@ div.reminders-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+}
 
-  /* Apply styles to each reminder item */
-  div.reminder {
+/* Apply styles to each reminder item */
+div.reminder {
     margin: 10px;
     padding: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #f7f7f7;
-  }
+}
 
-  /* Style the reminder name, description, and time */
-  .reminder-details {
+/* Style the reminder name, description, and time */
+.reminder-details {
     font-weight: bold;
-  }
+}
 
-  /* Apply styles to days */
-  .days-list {
+/* Apply styles to days */
+.days-list {
     display: flex;
     margin-top: 10px;
-  }
+}
 
-  .days-list span {
+.days-list span {
     padding-right: 5px;
-  }
+}
 
-  /* Style for True days */
-  .true-day {
+/* Style for True days */
+.true-day {
     color: green;
     font-weight: bold;
-  }
+}
 
-  /* Style for False days */
-  .false-day {
+/* Style for False days */
+.false-day {
     color: red;
-  }
+}

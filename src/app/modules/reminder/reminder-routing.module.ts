@@ -5,22 +5,22 @@ import { ReminderDashboardComponent } from './reminder-dashboard/reminder-dashbo
 import { ReminderViewEditComponent } from './reminder-view-edit/reminder-view-edit.component';
 
 const route: Route[] = [
-  {
-    path: '',
-    component: ReminderDashboardComponent,
-  },
-  {
-    path: 'view/:id',
-    component: ReminderViewEditComponent,
-  },
-  {
-    path: 'edit/:id',
-    component: ReminderViewEditComponent,
-  },
+    {
+        path: '',
+        component: ReminderDashboardComponent,
+    },
+    {
+        path: 'view/:id',
+        component: ReminderViewEditComponent,
+    },
+    {
+        path: 'edit/:id',
+        component: ReminderViewEditComponent,
+    },
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(route)],
-  exports: [RouterModule],
+    imports: [RouterModule.forChild(route)],
+    exports: [RouterModule],
 })
 export class ReminderRoutingModule {}

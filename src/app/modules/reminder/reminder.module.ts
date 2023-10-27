@@ -7,7 +7,7 @@ import { ReminderViewEditComponent } from './reminder-view-edit/reminder-view-ed
 import { SharedModule } from '@app/Shared/shared.module';
 
 @NgModule({
-  declarations: [ReminderDashboardComponent, ReminderViewEditComponent],
-  imports: [SharedModule, ReminderRoutingModule, MatIconModule],
+    declarations: [ReminderDashboardComponent, ReminderViewEditComponent],
+    imports: [SharedModule, ReminderRoutingModule, MatIconModule],
 })
 export class ReminderModule {}
